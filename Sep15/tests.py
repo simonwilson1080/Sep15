@@ -5,4 +5,7 @@ class HomePageTests(SimpleTestCase):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
 
-        
+class AboutPageTests(SimpleTestCase):
+    def test_urls_exists_at_correct_location(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
